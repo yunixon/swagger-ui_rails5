@@ -1,8 +1,10 @@
 <script type="text/javascript">
   $(function () {
     window.swaggerUi = new SwaggerUi({
-      discoveryUrl: <%= discovery_url || '' %>,
-      apiKey: <%= api_key || '' %>,
+      discoveryUrl: '<%= discovery_url %>',
+      <% if defined?(api_key) %>
+        apiKey: '<%= api_key %>',
+      <% end %>
       dom_id:"swagger-ui-container",
       supportHeaderParams: false,
       supportedSubmitMethods: ['get', 'post', 'put'],

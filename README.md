@@ -1,6 +1,6 @@
 # Swagger::UiRails
 
-TODO: Write a gem description
+A gem that lets you add [swagger-ui](https://github.com/wordnik/swagger-ui) easily to your rails application
 
 ## Installation
 
@@ -8,17 +8,26 @@ Add this line to your application's Gemfile:
 
     gem 'swagger-ui_rails'
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install swagger-ui_rails
-
 ## Usage
 
-TODO: Write usage instructions here
+Add to your application.js
+
+    //= swagger-ui
+
+Add to your application.css
+
+    //= swagger-ui
+
+Then add to some api_docs/index.html
+
+    = render 'swagger_ui/swagger_ui', discovery_url: 'root/to/swagger_doc.json'
+
+or create your own html page according to [swagger-ui sample](https://github.com/wordnik/swagger-ui/blob/master/dist/index.html)
+
+## Related projects
+
+[Grape](https://github.com/intridea/grape)
+[grape-swagger](https://github.com/tim-vandecasteele/grape-swagger)
 
 ## Contributing
 

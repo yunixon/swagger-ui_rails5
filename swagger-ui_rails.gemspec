@@ -9,8 +9,8 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Stjepan Hadjic"]
   gem.email         = ["Stjepan.hadjic@infinum.hr"]
   gem.description   = %q{A gem to add swagger-ui to rails asset pipeline}
-  gem.summary       = %q{A gem to add swagger-ui to rails asset pipeline}
-  gem.homepage      = ""
+  gem.summary       = %q{Add swagger-ui to your rails app easily}
+  gem.homepage      = "https://github.com/d4be4st/swagger-ui_rails"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
