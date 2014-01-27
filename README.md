@@ -16,7 +16,7 @@ Add to your application.js
 
 Add to your application.css
 
-    //= swagger-ui
+    *= swagger-ui
 
 Then add to some api_docs/index.html
 
