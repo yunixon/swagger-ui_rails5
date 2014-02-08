@@ -598,7 +598,7 @@
 
     SwaggerModelProperty.prototype.getSampleValue = function(modelsToIgnore) {
       var result;
-      if ((this.refModel != null) && (modelsToIgnore[this.refModel.name] === 'undefined')) {
+      if ((this.refModel != null) && (modelsToIgnore[this.refModel.name] === undefined)) {
         result = this.refModel.createJSONSample(modelsToIgnore);
       } else {
         if (this.isCollection) {
