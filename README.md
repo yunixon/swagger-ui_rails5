@@ -12,11 +12,11 @@ Add this line to your application's Gemfile:
 
 Add to your application.js
 
-    //= swagger-ui
+    //= require swagger-ui
 
 Add to your application.css
 
-    *= swagger-ui
+    *= require swagger-ui
 
 Then add to some api_docs/index.html
 
