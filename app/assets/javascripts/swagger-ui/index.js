@@ -7,6 +7,7 @@
 //= require ./lib/underscore-min.js
 //= require ./lib/backbone-min.js
 //= require ./lib/swagger.js
+//= require ./lib/swagger-client.js
 //= require ./swagger-ui.js
 //= require ./lib/highlight.7.3.pack.js
 
