@@ -26,6 +26,12 @@ Then add to some api_docs/index.html
 
 or create your own html page according to [swagger-ui sample](https://github.com/wordnik/swagger-ui/blob/master/dist/index.html)
 
+Swagger UI expects a body class of `swagger-section`. If you can't easily add that class to body in your layout, you can add it to a parent div, e.g.:
+
+    <div class="swagger-section">
+      = render 'swagger_ui/swagger_ui', discovery_url: 'root/to/swagger_doc.json'
+    </div>
+
 ## Related projects
 
 [Grape](https://github.com/intridea/grape)
