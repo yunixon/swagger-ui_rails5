@@ -28,7 +28,7 @@ or create your own html page according to [swagger-ui sample](https://github.com
 
 Swagger UI expects a body class of `swagger-section`. If you can't easily add that class to body in your layout, you can add it to a parent div, e.g.:
 
-    .swagger-section
+    %div.swagger-section
       = render 'swagger_ui/swagger_ui', discovery_url: 'root/to/swagger_doc.json'
 
 ## Related projects
