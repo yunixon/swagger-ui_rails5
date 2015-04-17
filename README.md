@@ -2,7 +2,7 @@
 
 A gem that lets you add [swagger-ui](https://github.com/wordnik/swagger-ui) easily to your rails application
 
-Current version: 2.1.0-alpha.7
+Current version: 2.1.8-M1
 
 ## Installation
 
