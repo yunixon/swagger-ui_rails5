@@ -3,7 +3,6 @@ module Swagger
 
     initializer :assets do |config|
       Rails.application.config.assets.precompile += %w{ swagger-ui.js }
-      Rails.application.config.assets.precompile += %w{ swagger-oauth.js }
       Rails.application.config.assets.precompile += %w{ swagger-ui.css }
       Rails.application.config.assets.precompile += %w{ swagger-ui/reset.css }
       Rails.application.config.assets.precompile += %w{ swagger-ui/screen.css }

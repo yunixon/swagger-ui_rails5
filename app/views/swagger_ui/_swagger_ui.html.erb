@@ -1,5 +1,9 @@
 <script type="text/javascript">
   $(function () {
+    //hljs.configure({
+    //  highlightSizeThreshold: 5000
+    //});
+
     window.swaggerUi = new SwaggerUi({
       url: '<%= discovery_url %>',
       <% if defined?(api_key) %>
@@ -9,29 +13,41 @@
       supportHeaderParams: false,
       supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
       onComplete: function(swaggerApi, swaggerUi){
-        if(console) {
-              console.log("Loaded SwaggerUI")
-              console.log(swaggerApi);
-              console.log(swaggerUi);
-          }
-        $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+        log("Loaded SwaggerUI");
       },
       onFailure: function(data) {
-        if(console) {
-              console.log("Unable to Load SwaggerUI");
-              console.log(data);
-          }
+        log("Unable to Load SwaggerUI");
       },
-      docExpansion: "none"
+      docExpansion: "none",
+      jsonEditor: false,
+      defaultModelRendering: 'schema',
+      showRequestHeaders: true
     });
 
     window.swaggerUi.load();
+
+    function log() {
+      if ('console' in window) {
+        console.log.apply(console, arguments);
+      }
+    }
   });
 
 </script>
 
+<div id='header'>
+  <div class="swagger-ui-wrap">
+    <a id="logo" href="http://swagger.io"><span class="logo__title">swagger</span></a>
+    <form id='api_selector'>
+      <div class='input'><input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" type="text"/></div>
+      <div id='auth_container'></div>
+      <div class='input'><a id="explore" class="header__btn" href="#" data-sw-translate>Explore</a></div>
+    </form>
+  </div>
+</div>
+
 <div id="message-bar" class="swagger-ui-wrap">
-    &nbsp;
+  &nbsp;
 </div>
 
 <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
