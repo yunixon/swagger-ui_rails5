@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'swagger-ui_rails/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "swagger-ui_rails"
+  gem.name          = "swagger-ui_rails5"
   gem.version       = Swagger::UiRails::VERSION
   gem.authors       = ["Stjepan Hadjic"]
   gem.email         = ["Stjepan.hadjic@infinum.hr"]
