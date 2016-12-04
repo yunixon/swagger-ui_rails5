@@ -3,11 +3,10 @@
 //= require ./lib/jquery.slideto.min.js
 //= require ./lib/jquery.wiggle.min.js
 //= require ./lib/jquery.ba-bbq.min.js
-//= require ./lib/handlebars-1.0.0.js
+//= require ./lib/handlebars-2.0.0.js
 //= require ./lib/underscore-min.js
 //= require ./lib/backbone-min.js
-//= require ./lib/swagger.js
 //= require ./lib/swagger-client.js
+//= require ./lib/marked.js
 //= require ./swagger-ui.js
 //= require ./lib/highlight.7.3.pack.js
-

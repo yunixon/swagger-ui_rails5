@@ -2,7 +2,7 @@
 
 A gem that lets you add [swagger-ui](https://github.com/wordnik/swagger-ui) easily to your rails application
 
-Current version: 2.1.0-alpha.7
+Current version: 2.1.8-M1
 
 ## Installation
 
@@ -25,6 +25,11 @@ Then add to some api_docs/index.html
     = render 'swagger_ui/swagger_ui', discovery_url: 'root/to/swagger_doc.json'
 
 or create your own html page according to [swagger-ui sample](https://github.com/wordnik/swagger-ui/blob/master/dist/index.html)
+
+Swagger UI expects a body class of `swagger-section`. If you can't easily add that class to body in your layout, you can add it to a parent div, e.g.:
+
+    %div.swagger-section
+      = render 'swagger_ui/swagger_ui', discovery_url: 'root/to/swagger_doc.json'
 
 ## Related projects
 
