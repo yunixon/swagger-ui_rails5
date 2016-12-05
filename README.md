@@ -4,7 +4,7 @@ A gem that lets you add [swagger-ui](https://github.com/wordnik/swagger-ui) easi
 
 Compatible with rails 5
 
-Current version: 2.2.8
+Current version: 2.2.8.1
 
 ## Installation
 
