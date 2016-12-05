@@ -2,13 +2,15 @@
 
 A gem that lets you add [swagger-ui](https://github.com/wordnik/swagger-ui) easily to your rails application
 
+Compatible with rails 5
+
 Current version: 2.2.8
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'swagger-ui_rails'
+    gem 'swagger-ui_rails5'
 
 ## Usage
 
