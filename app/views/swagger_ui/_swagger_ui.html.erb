@@ -10,9 +10,9 @@
         apiKey: '<%= api_key %>',
       <% end %>
       <% if defined?(validator_url) %>
-        validatorUrl: '<%= validator_url %>',
+        validatorUrl: <%= validator_url %>,
       <% end %>
-      dom_id:"swagger-ui-container",
+      dom_id: "swagger-ui-container",
       supportHeaderParams: false,
       supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
       onComplete: function(swaggerApi, swaggerUi){
