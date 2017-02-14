@@ -9,6 +9,9 @@
       <% if defined?(api_key) %>
         apiKey: '<%= api_key %>',
       <% end %>
+      <% if defined?(validator_url) %>
+        validatorUrl: '<%= validator_url %>',
+      <% end %>
       dom_id:"swagger-ui-container",
       supportHeaderParams: false,
       supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
